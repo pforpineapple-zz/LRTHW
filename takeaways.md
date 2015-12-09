@@ -1,0 +1,23 @@
+### TAKEAWAYS (at ex23)
+ - Puts: Prints to the console
+ - \: Escapes whatever is next (eg. `\n` goes back in line)
+ - #: Comment
+ - #{}: String interpolation, can use maths, code (can call variables ...) 
+ - + (strings): Concatenation
+ - % (interpolation): Formatter for consistency in interpolation of variables
+ - """ """: Multiple line string
+ - \t: Tab in what is printed to console
+ - gets.chomp: Gets next line (can prompt user)
+ - $0 (shell): Current document
+ - ARGV: Gives argument to entire script
+ - $stdin.gets.chomp vs gets.chomp : read user input / read ARGV, if empty read user input
+
+ - open(file): Unpacks a file into a slice of memory
+ - open(file).read: Reads file opened above. puts open(file).read will print the file to console
+ - open(file).close: Put at end of script to avoid memory leaks
+ - open(file, w): Opens file in write mode (r for read, etc...)
+ - .write: Writes into file
+ - .truncate: Empties file
+ - .seek: Goes back to first byte of file (needs to after it being put)
+ - .gets: Gets following line in file (waits for \n). Returns 'nil' at end of input (.readline does not)
+ - return : Stores the returned value without putting it. May be omitted (eg. ex21.rb)
